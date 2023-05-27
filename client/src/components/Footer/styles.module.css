@@ -1,0 +1,24 @@
+.footerContainer {
+}
+
+.footerContainer .navigation {
+	margin-bottom: 16px;
+}
+
+.footerContainer .navigation a {
+	margin: 0;
+	padding: 0;
+	display: inline-block;
+	text-decoration: none;
+}
+
+.footerContainer .navigation a,
+.footerContainer span {
+	font-size: 12px;
+	color: #737373;
+}
+
+.footerContainer .navigation a:not(:last-of-type)::after {
+	content: '\00B7';
+	margin: 0 0.25em 0 0.25em;
+}

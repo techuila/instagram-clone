@@ -1,0 +1,51 @@
+.storyCoinContainer {
+	gap: 2px;
+	width: 64px;
+	display: flex;
+	cursor: pointer;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.ring {
+	width: 66px;
+	height: 66px;
+	position: relative;
+	background: linear-gradient(-140deg, #833ab4, #fd1d1d, #fcb045);
+}
+
+.ring img {
+	width: 58px;
+	height: 58px;
+	margin-top: 4px;
+	margin-left: 4px;
+	object-fit: cover;
+	position: relative;
+}
+
+.ring,
+.ring img,
+.ring:before {
+	border-radius: 200px;
+}
+
+.ring:before {
+	top: 2px;
+	left: 2px;
+	content: '';
+	width: 62px;
+	height: 62px;
+	display: block;
+	position: absolute;
+	background-color: #000000;
+}
+
+.storyCoinContainer .profileName {
+	font-size: 12px;
+	font-weight: 600;
+	color: #ffffff;
+	overflow: hidden;
+	text-align: center;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}

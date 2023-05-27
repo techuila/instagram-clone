@@ -1,0 +1,18 @@
+.buttonContainer {
+	border: none;
+	font-size: 12px;
+	cursor: pointer;
+}
+
+.ghost {
+	font-weight: 700;
+	background-color: transparent;
+}
+
+.primary {
+	color: var(--color-primary);
+}
+
+.secondary {
+	color: #ffffff;
+}

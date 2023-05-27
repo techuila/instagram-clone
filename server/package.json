@@ -1,0 +1,19 @@
+{
+  "name": "server",
+  "module": "index.ts",
+  "scripts": {
+    "dev": "bun --hot server.ts"
+  },
+  "type": "module",
+  "dependencies": {
+    "@elysiajs/swagger": "^0.3.0",
+    "@supabase/supabase-js": "^2.20.0",
+    "elysia": "^0.4.6"
+  },
+  "devDependencies": {
+    "bun-types": "^0.5.0"
+  },
+  "alias": {
+    "utils": "./utils/*"
+  }
+}

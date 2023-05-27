@@ -1,0 +1,9 @@
+.storiesContainer {
+	flex-grow: 1;
+	height: 117px;
+
+	gap: 16px;
+	display: flex;
+	padding: 16px 0;
+	margin-top: 16px;
+}

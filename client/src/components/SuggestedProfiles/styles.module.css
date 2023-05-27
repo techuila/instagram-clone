@@ -1,0 +1,27 @@
+.suggestedProfilesContainer {
+	display: flex;
+	padding: 4px 0;
+	margin-bottom: 12px;
+	flex-direction: column;
+}
+
+.suggestedProfilesContainer .header {
+	display: flex;
+	margin-bottom: 8px;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.suggestedProfilesContainer .header * {
+	margin: 0;
+}
+
+.suggestedProfilesContainer .header h4 {
+	color: var(--color-gray);
+}
+
+.suggestedProfilesContainer .profiles > div {
+	margin: 0;
+	height: 34px;
+	padding: 8px 0 8px 6px;
+}
