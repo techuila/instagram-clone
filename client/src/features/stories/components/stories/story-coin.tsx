@@ -1,5 +1,6 @@
 import React from 'react';
 
+import ProfileRing from '@components/profile-ring';
 import styles from './styles.module.css';
 
 type StoryCoinProps = {
@@ -7,16 +8,12 @@ type StoryCoinProps = {
 	img: string;
 };
 
-function StoryCoin({ name, img }: StoryCoinProps) {
+export function StoryCoin({ name, img }: StoryCoinProps) {
 	return (
 		<div className={styles.storyCoinContainer}>
-			<div className={styles.ring}>
-				<img src={img} alt='Profile Image' />
-			</div>
+			<ProfileRing img={img} />
 
 			<span className={styles.profileName}>{name}</span>
 		</div>
 	);
 }
-
-export default StoryCoin;

@@ -1,11 +1,12 @@
 import React from 'react';
 
+import { StoryCoin } from './story-coin';
+
 import styles from './styles.module.css';
-import StoryCoin from '@components/StoryCoin';
 
-import { stories } from '@data/Stories';
+import { stories } from '@data/stories';
 
-function Stories() {
+export function Stories() {
 	return (
 		<div className={styles.storiesContainer}>
 			{stories &&
@@ -15,5 +16,3 @@ function Stories() {
 		</div>
 	);
 }
-
-export default Stories;

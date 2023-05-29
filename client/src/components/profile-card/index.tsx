@@ -1,7 +1,7 @@
 import React from 'react';
 import cx from 'classnames';
 
-import Button, { Variant } from '@components/Button';
+import Button, { Variant } from '../button';
 import styles from './styles.module.css';
 
 export enum Size {

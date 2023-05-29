@@ -15,12 +15,14 @@ export enum Color {
 }
 
 type ButtonProps = {
-	variant: Variant;
+	icon?: string;
 	color?: Color;
+	variant: Variant;
 	fontWeight?: number;
 };
 
 function Button({
+	icon,
 	variant,
 	children,
 	color = Color.PRIMARY,
@@ -38,6 +40,7 @@ function Button({
 			className={cx(styles.buttonContainer, variantStyle, color)}
 			style={{ fontWeight: fontWeight }}
 		>
+			{icon && <img src={icon} alt='Icon' />}
 			{children}
 		</button>
 	);

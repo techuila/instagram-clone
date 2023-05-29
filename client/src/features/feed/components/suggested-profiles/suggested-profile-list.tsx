@@ -1,10 +1,11 @@
 import React from 'react';
-import Button, { Color, Variant } from '@components/Button';
-import ProfileCard, { Size } from '@components/ProfileCard';
+
+import Button, { Color, Variant } from '@components/button';
+import ProfileCard, { Size } from '@components/profile-card';
 
 import styles from './styles.module.css';
 
-import { suggestedProfiles } from '@data/SuggestedProfiles';
+import { suggestedProfiles } from '@data/suggested-profiles';
 
 function SuggestedProfiles() {
 	return (

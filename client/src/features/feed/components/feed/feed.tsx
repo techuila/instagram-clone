@@ -1,13 +1,14 @@
 import React from 'react';
 
 import ProfileImg from '@assets/profile-1.avif';
-import ProfileCard from '@components/ProfileCard';
-import SuggestedProfiles from '@components/SuggestedProfiles';
+import ProfileCard from '@components/profile-card';
+import Footer from '@components/footer';
 
-import Footer from '@components/Footer';
+import SuggestedProfiles from '../suggested-profiles/suggested-profile-list';
+
 import styles from './styles.module.css';
 
-function FeedSidebar() {
+function Feed() {
 	return (
 		<section className={styles.feedSidebarContainer}>
 			<ProfileCard
@@ -24,4 +25,4 @@ function FeedSidebar() {
 	);
 }
 
-export default FeedSidebar;
+export default Feed;

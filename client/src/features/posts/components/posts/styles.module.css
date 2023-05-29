@@ -1,0 +1,116 @@
+.postsContainer {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.postContainer {
+	max-width: 470px;
+	margin-bottom: 12px;
+	padding-bottom: 14px;
+	border-bottom: 1px solid rgb(38, 38, 38);
+}
+
+.postContainer .header {
+	height: 56px;
+	margin-bottom: 4px;
+}
+
+.postContainer :is(.header, .header .left) {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.postContainer .header .left .username {
+	font-size: 14px;
+	font-weight: 800;
+	margin-left: 12px;
+}
+
+.postContainer .header .left > :is(.timeFromNow, .timeFromNow::before) {
+	font-weight: 600;
+}
+
+.postContainer .header .timeFromNow::before {
+	content: '\00B7';
+	margin: 0 0.25em 0 0.25em;
+}
+
+.postCarouselContainer {
+	width: 468px;
+	height: 468px;
+	overflow: hidden;
+	position: relative;
+	border-radius: 4px;
+	margin-bottom: 12px;
+}
+
+.postCarouselContainer img {
+	width: 468px;
+	height: 468px;
+	overflow: hidden;
+	border-radius: 4px;
+}
+
+.postCarouselContainer :is(.prevImg, .nextImg) {
+	top: 50%;
+	width: 30px;
+	height: 30px;
+	border: none;
+	margin: 0 8px;
+	cursor: pointer;
+	position: absolute;
+	transform: translateY(-50%);
+	background-repeat: no-repeat;
+	background-color: transparent;
+	background-image: url('../../../../assets/icons.png');
+}
+
+.postCarouselContainer .prevImg {
+	background-position: -130px -98px;
+	left: 0;
+}
+
+.postCarouselContainer .nextImg {
+	background-position: -162px -98px;
+	right: 0;
+}
+
+div[aria-label='grid'] {
+	overflow: hidden !important;
+}
+
+section .actionButtons {
+	display: flex;
+	margin-bottom: 6px;
+	justify-content: space-between;
+}
+
+section .noLikes {
+	font-size: 14px;
+	font-weight: 900;
+}
+
+section h1 b {
+	font-weight: 800;
+}
+
+section h1 {
+	margin-top: 6px;
+	font-size: 14px;
+	font-weight: 500;
+	font-family: var(--font-family-system);
+}
+
+section .commentBox {
+	width: 100%;
+	border: none;
+	background-color: transparent;
+	font-family: var(--font-family-system);
+}
+
+section .commentBox:focus {
+	outline: none;
+}
