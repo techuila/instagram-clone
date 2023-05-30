@@ -18,16 +18,16 @@ To install the necessary dependencies, run the following command in your termina
 
 ```bash
 instagram-clone$ cd client
-instagram-clone$ bun install
+instagram-clone/client$ bun install
 ```
 
 This will install all the required packages and libraries needed to run this project.
 
-Development
+## Development
 To start the development server, use the following command:
 
 ```bash
-instagram-clone$ bun run dev
+instagram-clone/client$ bun run dev
 ```
 
 This will start the server, and you should be able to view the project in your local development environment.
